@@ -1,9 +1,8 @@
-````md
 # DocGo (Core Python Implementation)
 
 A lightweight, dependency-free command-line tool to convert `.docx` files into Markdown, HTML, and CSV.
 
-**Note:** This is **Phase 1** of the assessment. It is implemented using **Core Python (Standard Library) only** to demonstrate foundational Computer Science concepts and Software Engineering patterns without relying on external libraries like `python-docx` or `pandas`.
+**Note:** It is implemented using **Core Python (Standard Library) only** to demonstrate foundational Computer Science concepts and Software Engineering patterns without relying on external libraries like `python-docx` or `pandas`.
 
 ---
 
@@ -35,13 +34,11 @@ docgo/
 ---
 
 ## ⚙️ Environment Setup
-
-### Using uv
-
-```bash
-uv venv
-.venv\Scripts\activate
 ```
+git clone https://github.com/soumjx/python-doc-converter.git
+cd 
+```
+### place the test.docx in the root directory
 
 ---
 
@@ -52,8 +49,23 @@ uv venv
 ```bash
 python -m src.docgo.main test.docx html -o output/result.html
 ```
+### All Output Formats
 
+```bash
+python -m src.docgo.main test.docx md
+python -m src.docgo.main test.docx html -o output/doc.html
+python -m src.docgo.main test.docx csv -o output/data.csv
+```
 ---
+
+
+### Using uv
+
+```bash
+uv venv
+.venv\Scripts\activate
+```
+
 
 ### All Output Formats
 
@@ -62,8 +74,6 @@ uv run python -m src.docgo.main test.docx md
 uv run python -m src.docgo.main test.docx html -o output/doc.html
 uv run python -m src.docgo.main test.docx csv -o output/data.csv
 ```
-
 ---
 
-```
-```
+
