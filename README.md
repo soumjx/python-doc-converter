@@ -52,7 +52,7 @@ python -m src.docgo.main test.docx html -o output/result.html
 ### All Output Formats
 
 ```bash
-python -m src.docgo.main test.docx md
+python -m src.docgo.main test.docx md -o output/doc.md
 python -m src.docgo.main test.docx html -o output/doc.html
 python -m src.docgo.main test.docx csv -o output/data.csv
 ```
@@ -70,7 +70,7 @@ uv venv
 ### All Output Formats
 
 ```bash
-uv run python -m src.docgo.main test.docx md
+uv run python -m src.docgo.main test.docx md -o output/doc.md
 uv run python -m src.docgo.main test.docx html -o output/doc.html
 uv run python -m src.docgo.main test.docx csv -o output/data.csv
 ```
